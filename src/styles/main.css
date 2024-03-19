@@ -1,0 +1,133 @@
+.error {
+  color: red;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.navi {
+  height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: lightseagreen;
+  gap: 10px;
+
+  :is(a) {
+    color: greenyellow;
+    text-decoration: none;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+}
+
+.loginForm {
+  width: 800px;
+  height: 280px;
+  margin: 5px auto 5px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.input-normal {
+  background: lightcyan;
+}
+
+.btn-normal {
+  border: 2px solid darkgoldenrod;
+  border-radius: 2px;
+  background: white;
+  color: grey;
+
+  &:hover {
+    background-color: lightgoldenrodyellow;
+    color: black;
+  }
+}
+
+.btn-red {
+  border: 2px solid brown;
+  border-radius: 2px;
+  background: lightcoral;
+  color: black;
+
+  &:hover {
+    background-color: lightyellow;
+  }
+}
+
+.btn-navi {
+  margin-left: 10px;
+  border: 2px solid darkgreen;
+  border-radius: 2px;
+  background: lightgreen;
+  color: balck;
+
+  &:hover {
+    background-color: lightgoldenrodyellow;
+    color: black;
+  }
+}
+
+.blog-style {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.blog-layout {
+  padding: 2px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.grid-users {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  .grid-users-field {
+    margin-top: 40px;
+  }
+
+  .grid-users-value {
+    :is(li) {
+      list-style: none;
+    }
+  }
+}
+
+.link-userDetails {
+  text-decoration: inherit;
+
+  &:hover {
+    color: brown;
+  }
+}
+
+.link-blogDetails {
+  text-decoration: inherit;
+
+  :is(a) {
+    text-decoration: inherit;
+    color: black;
+
+    &:hover {
+      color: cornflowerblue;
+    }
+  }
+}
